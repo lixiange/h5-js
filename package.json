@@ -1,0 +1,19 @@
+{
+  "name": "imrc_forum",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "browser-sync start --server --files 'css/*.css, *.html'",
+    "bs-proxy": "browser-sync start --proxy http://localhost/test/ --files 'css/*.css, *.html'",
+    "build": "babel js -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
